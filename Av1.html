@@ -1,3 +1,5 @@
+
+   
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,71 +17,140 @@
     
     
     <style>
-        .Nome_Email{
-        float: left;
-        height: 200%;
-        width: 100%;
-        border: 1px solid rgb(136, 12, 33);
-
-
+        .slogan{
+            width: 30px;
+            height: 30px;
+            margin-right: 80%;
         }
-        .dados{
-        width: 15%;
-        height: 15%;
+        .Bordas_notebook{
+        background: no-repeat center/55% url('./Notebook-871056.svg');
+        height: 300px;
+        width: 200px;
+        margin-left: 5%;
+        border-style: inset;
+        border-color:#484950;
+        }
+        .Nosso_Trabalho{
+        height: 300px;
+        width: 100%;
+        background-image: linear-gradient(to top, #09203f 0%, #537895 100%)!important;
+        }
+        .Sobre_Nos{
+        height: 300px;
+        width: 100%;
+        background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%)!important;
+        }
+        nav {
+        position: absolute;
+        display: flex;
+        }
+        nav li {
+        display: inline;
+        margin: 15px;
+        }
+        nav a {
+        text-transform: capitalize;
+        color: #000000;
+        font-weight: bold;
+        font-size: 16px;
+        text-decoration: dotted;
+        margin-top: 2%;
+        }
+        .Logo{
+        background: no-repeat center/55% url('./768px-Dell_Logo.svg.png');
+        height: 300px;
+        width: 300px;
+        margin-left: 31%;
+        animation:dance4me 5s infinite;
+        position: relative;
+        }
+                
+        .Title{
         text-align: center;
         }
-        .Plataformas {
-            width: 100%;
-            height: 30%;
-            
-           
+        .Nome_Email{
+        height: 100px;
+        width: 70%;
+        margin-left: 16%;
         }
-        .imagemDeFundo{        
-        /*background: no-repeat center/10% url('./vasco.png');*/
-        background-color: black;
-        height: 100%;
+
+        input{
+        color: black;
+        }   
+        
+        .Nav1{
+        height: 100px;
+        width: 25px;
+        margin-right: 16%;
+    
+        }
+        #Fundo {
         width: 100%;
-        border: 1px solid rgb(12, 136, 53);
-
-        
+        height: 100%;
+        background-image: linear-gradient(to top, #09203f 0%, #537895 100%)
+   
         }
-        .bt{
-            
-        border: 0;
-        padding: 10px;
-        width: 100px;
-        height: 50px;
-        margin: 10px;
-        cursor: pointer;
-        border-radius: 20px;
-        position:relative;
-        vertical-align: middle
+        .Plataforma{
+        height: 55%;
+        width: 55%;
+        }
+        .topics{
+            margin-left: 200px;
+            color: #000000;
 
-        
         }
     </style>
 </head>
 
 <body>
-    </table>
+    <div id="Fundo">  
+        <Div class="Logo"></Div>
         <div class="row">
             <div class="col-xs-12">
-                <div class="imagemDeFundo">
-                    <Div class="dados">
+                <Div class="Nome_Email">
+                    <table>
                         <thead>
-                        <tr>
-                            <div class="Nome_Email">
-                                <input type="text" name="name" placeholder="Nome">
-                                <input type="text" name="lastname" placeholder="Sobrenome">
-                            </div>
-                        </tr>
-                    </thead>
-                        </tr>
-                    </tbody>
-                    </Div>
-                </div>
+                            <tr>
+                                <div class="Nome_Email">
+                                    <input class="Im1" type="text" style ="background-color: #777777;"name="name" placeholder="Nome">
+                                    <input class="Im2" type="text" style ="background-color: #777777;"name="lastname" placeholder="Sobrenome">
+                                    <button onclick="AddTableRow()" type="button" style ="background-color: #4f6df1;">Enviar</button>
+                                    <div class="Nav1">
+                                        <nav>
+                                            <ul> 
+                                                    <li><a href="index.html">CUSTOMER</a></li>
+                                                 <li><a href="produtos.html">CUSTOMER</a></li>
+                                                 <li><a href="contato.html">CUSTOMER</a></li>
+                                             </ul>
+                                        <nav>
+                                    </div>       
+                                </div>
+                            </tr>
+                        </thead>
+                    </table>
+                </Div>
+            </Div>
+        </div>
+        <Div class="Sobre_Nos">
+
+        </Div>
+
+
+        <div class="Nosso_Trabalho">
+        
+            <div class="Bordas_notebook">
+                <ul class="Cor-topics">
+                    <li class="topics">CPU: I53470s</li><li class="topics">RAM: 8GB</li><li class="topics">SSD: 480GB</li><li class="topics">Tela: FullHD WVA de 15.6"(1920x1080)</li>
+                </ul>
             </div>
         </div>
+    
+    
+    
+
+
+
+
     </div>
-</body>
+
 </html>
