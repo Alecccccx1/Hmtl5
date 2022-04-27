@@ -17,6 +17,28 @@
     
     
     <style>
+
+        .Nosso_Trabalho{
+        height: 300px;
+        width: 600px;
+
+        }
+        nav {
+        position: absolute;
+        display: flex;
+        }
+        nav li {
+        display: inline;
+        margin: 15px;
+        }
+        nav a {
+        text-transform: capitalize;
+        color: #000000;
+        font-weight: bold;
+        font-size: 16px;
+        text-decoration: dotted;
+        margin-top: 2%;
+        }
         .Logo{
         background: no-repeat center/55% url('./768px-Dell_Logo.svg.png');
         height: 300px;
@@ -29,25 +51,30 @@
         }
         .Nome_Email{
         height: 100px;
-        width: 500px;
-        margin-left: auto;
-        margin-right: auto;
-        }
-        #Fundo {
-            width: 100%;
-            height: 900px;
-            background-image: linear-gradient(to top, #09203f 0%, #537895 100%)
-           
-        }
-        .Plataforma{
-        border-radius: 70%;
-        border: none;
-        height: 300px;
-        width: 300px;
-        background: no-repeat center/15% url('./Facebook.png');
-        
+        width: 100%;
+        margin-left: 16%;
         }
 
+        input{
+        color: black;
+        }   
+        
+        .Nav1{
+        height: 100px;
+        width: 25px;
+        margin-right: 16%;
+    
+        }
+        #Fundo {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top, #09203f 0%, #537895 100%)
+   
+        }
+        .Plataforma{
+        height: 55%;
+        width: 55%;
+        }
     </style>
 </head>
 
@@ -61,9 +88,19 @@
                         <thead>
                             <tr>
                                 <div class="Nome_Email">
-                                    <input type="text" name="name" placeholder="Nome">
-                                    <input type="text" name="lastname" placeholder="Sobrenome">
-                                    <button onclick="AddTableRow()" type="button">Enviar</button>
+                                    <input class="Im1" type="text" style ="background-color: #777777;"name="name" placeholder="Nome">
+                                    <input class="Im2" type="text" style ="background-color: #777777;"name="lastname" placeholder="Sobrenome">
+                                    <button onclick="AddTableRow()" type="button" style ="background-color: #4f6df1;">Enviar</button>
+                                    <div class="Nav1">
+                                        <nav>
+                                            <ul> 
+                                                <li><a href="index.html">CUSTOMER</a></li>
+                                                 <li><a href="produtos.html">CUSTOMER</a></li>
+                                                 <li><a href="contato.html">CUSTOMER</a></li>
+                                             </ul>
+                                        <nav>
+                                    </div>
+                                    </div>         
                                 </div>
                             </tr>
                         </thead>
@@ -71,10 +108,9 @@
                 </Div>
             </Div>
         </div>
-        <div class="Plataforma">
-            
-        </div>    
-    
+        <div class="Nosso_Trabalho">
+
+        </div>
     
     
     
