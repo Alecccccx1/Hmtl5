@@ -27,8 +27,7 @@
         height: 300px;
         width: 200px;
         margin-left: 5%;
-        border-style: inset;
-        border-color:#484950;
+        top: 10px;
         }
         .Nosso_Trabalho{
         height: 300px;
@@ -92,10 +91,10 @@
         width: 55%;
         }
         .topics{
-        width: 200px;
-        margin-left: 200px;
+        width: 300px;
+        margin-left: 300px;
         color: #000000;
-
+        text-align: center;
         }
         .topics-1{
         width: 200px;
@@ -109,8 +108,8 @@
         background: no-repeat center/55% url('./Reuniao.png');
         position: absolute; 
 	    left: 380px; /* posiciona a 90px para a esquerda */ 
-        top: 440px; /* posiciona a 70px para baixo */
-        height: 200px;
+        top: 415px; /* posiciona a 70px para baixo */
+        height: 250px;
         width: 200px;
         border-style: inset;
         border-color:#484950;
@@ -121,15 +120,13 @@
         background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%)!important;
         }
         .Perfil{
-            background: no-repeat center/75% url('./perfil.png');
-            position: absolute; 
-            align-items: center;
-            height: 200px;
-            width: 200px;
-            left: 100px;
-            top: 1050px;
-            
-
+        background: no-repeat center/75% url('./perfil.png');
+        position: absolute; 
+        align-items: center;
+        height: 200px;
+        width: 200px;
+        left: 100px;
+        top: 1050px;
         }
         .Depoimento-1{
         width: 655px;
@@ -138,6 +135,26 @@
         text-indent: 2px;
         text-align: justify;
         letter-spacing: 0px;
+        }
+        .topics-2{
+        width: 200px;
+        margin-left: 210px;
+        color: #000000;
+        text-indent: 10px;
+        text-align: justify;
+        letter-spacing: 1px;
+        }
+        .Fale_Conosco{
+        height: 500px;
+        width: 100%;
+        background-image: linear-gradient(to top, #09203f 0%, #537895 100%)!important;
+        }
+        .Fale_Conosco_Email{
+        height: 250px;
+        width: 100%;
+        margin-left: 600px;
+        position: absolute; 
+        top: 1600px;
         }
     </style>
 </head>
@@ -174,7 +191,7 @@
         </div>
         <Div class="Sobre_Nos">
             <div class="Reuniao">
-                <p class="topics-1">Dell, Inc. É uma empresa de hardware empregando mais de 106.700 pessoas no mundo inteiro.</p>
+                <p class="topics-1">Hoje, a Dell Technologies é essencial para mudar o cenário digital em todo o mundo. Estamos entre as maiores empresas de tecnologia do mundo, ajudando a transformar a vida das pessoas com recursos extraordinários.</p>
 
             </div>
 
@@ -197,7 +214,14 @@
             </div>
 
         </Div>
-    
+        <Div class="Fale_Conosco">
+            <div class="Logo"></div>
+            <Div class="Fale_Conosco_Email">   
+                <input class="Im1" type="text" style ="background-color: #7492d3;"name="name" placeholder="Email">
+                <input class="Im2" type="text" style ="background-color: #7492d3;"name="lastname" placeholder="Nome">
+                <button onclick="AddTableRow()" type="button" style ="background-color: #4f6df1;">Enviar</button>     
+            </Div>
+        </Div>
 
     
     
